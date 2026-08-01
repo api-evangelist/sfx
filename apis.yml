@@ -1,7 +1,25 @@
 aid: sfx
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sfx.png
 name: SFX
-description: SFX is a company surfaced as a portfolio company of insight-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: SFX (SFX Entertainment, now operating as LiveStyle, Inc) is a Beverly
+  Hills based global live-events and electronic dance music company. Originally founded
+  by Robert F.X. Sillerman as a roll-up of EDM festival and event brands, the company
+  reorganized as LiveStyle and continues to produce live music experiences, festivals,
+  and fan events under the banner "For the Love of Music." It was surfaced as a
+  portfolio-linked company and added to the API Evangelist network for enrichment.
+  The company presents a corporate marketing web presence and publishes no public
+  developer, API, or technical integration surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/sfx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,19 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 tags:
 - Company
+- Live Events
+- Music
+- Entertainment
+- Electronic Dance Music
+- Festivals
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,9 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sfx-domain-security.yml
 - type: Website
-  url: http://sfxii.com/
+  url: https://livestyle.com/
+- type: TermsOfService
+  url: https://livestyle.com/terms-conditions/
